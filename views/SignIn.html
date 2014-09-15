@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>List Students</h2>
+      <ul>
+        <li ng-repeat="item in students">
+          {{item.name}} Signed In: <input ng-model="item.signed_in" type="checkbox">
+          {{item.signed_in}}
+        </li>
+      </ul>
+      <!-- <form ng-submit="StudentsFactory.signInStudent(item)" class="form-inline", role="form">
+        <label for="studentName">Sign in here:</label>
+        <input name="studentName" type="text" ng-model="StudentsFactory.studentName" class="form-control" id="student-name" placeholder="Enter name">
+        <button type="submit" class="btn btn-success">submit</button>
+      </form> -->
+    </div>
+  </div>
+</div>
